@@ -1,0 +1,80 @@
+body{
+    padding-top:0.88rem;
+}
+#head{
+    height: 0.78rem;
+    background: #edf1f1;
+}
+#head li{
+    border-right: 2px solid #818685;
+    font-size:0.3rem;
+    line-height: 0.3rem;
+    color: #0f1315;
+    text-align: center;
+    flex: 1;
+}
+#head li:last-child{
+    border:none;
+}
+#banner img{
+    width:100%;
+}
+#message{
+    line-height:0.88rem;
+    font-size: 0.3rem;
+    color: #1e1e1e;
+    background: #fff url(../images/index/message.png) no-repeat 0.3rem center;
+    -webkit-background-size:0.41rem 0.33rem;
+    background-size:0.41rem 0.33rem;
+    padding-left:0.92rem;
+}
+#icon{
+    background:#edf1f1 ;
+    padding-top:0.64rem;
+    padding-bottom: 0.6rem;
+    padding-left:0.84rem;
+    padding-right:0.84rem;
+}
+#icon ul li img{
+    width: 1.5rem;
+    height:1.5rem;
+}
+#icon ul li p{
+    margin-top:0.16rem;
+    font-size: 0.28rem;
+    color:#1e1e1e;
+    text-align: center;
+}
+footer{
+    height: 0.98rem;
+    background: #e1e8e8;
+    /*position: fixed;*/
+    /*bottom:0;*/
+    width: 100%;
+
+}
+footer ul li img{
+    margin-top:0.08rem;
+}
+footer ul li:nth-of-type(1) img{
+    width: 0.47rem;
+    height:0.51rem;
+}
+footer ul li:nth-of-type(2) img{
+    width:0.54rem;
+    height: 0.51rem;
+}
+footer ul li:nth-of-type(3) img{
+    width:0.5rem;
+    height:0.51rem;
+}
+footer ul li:nth-of-type(4) img{
+    width:0.55rem;
+    height:0.51rem;
+}
+footer ul li p{
+    font-size:0.24rem;
+    text-align: center;
+    color: #7b9279;
+    margin-top:0.06rem;
+}

@@ -60,3 +60,6 @@ hr {
 input{
     border:none;
 }
+img{
+    display: block;
+}
