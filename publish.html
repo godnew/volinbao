@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1 ,user-scalable=0">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/Reset.css">
+    <link rel="stylesheet" href="style/CommonMB.css">
+    <link rel="stylesheet" href="style/Header.css">
+    <link rel="stylesheet" href="style/publish.css">
+    <script src="js/common.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<header class="fix"><span></span>宝贝详情<span id="submit">下一步</span></header>
+<form action="" method="get">
+    <div class="tc pb20 bgwh">
+        <div class='dib photo'><input type="file"></div>
+        <p class="f30 mt30">上传宝贝美照，卖个好价钱</p>
+    </div>
+    <div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="描述下您的宝贝"></textarea>
+    </div>
+    <div class="oprice df aic pl30 f30 bgwh"><span class="dib" style="width: 1.4rem;">原价</span><input type="text"><span>元</span></div>
+    <div class="nprice df aic pl30 f30 bgwh bte"><span class="dib" style="width:1.4rem;">转让价</span><input type="text"><span>元</span></div>
+    <div class="old f30 df aic"><span>新旧程度</span><input type="text" readonly></div>
+    <div class="phone f30 df aic mt20 pl30 bgwh"><span>手机号</span><input type="text"></div>
+    <div class="name f30 df aic pl30 bgwh"><span>联系人</span><input type="text"></div>
+    <div class="type pt30 bte">
+        <p class="pl30 f30" style="color:#101315;">收货类型</p>
+        <ul id="type" class="df jcsb pl30 pr30 mt30">
+            <li>
+                <input type="radio" name="type">
+                <div class="active">自提</div>
+            </li>
+            <li>
+                <input type="radio" name="type">
+                <div>包邮</div>
+            </li>
+            <li>
+                <input type="radio" name="type">
+                <div>到付</div>
+            </li>
+        </ul>
+    </div>
+</form>
+<script>
+    $(function(){
+        $("input[type='radio']").click(function(){
+            $("input[type='radio']").each(function(){
+                if($(this).is(":checked")){
+                    $(this).siblings().addClass("active");
+                }else{
+                    $(this).siblings().removeClass("active");
+                }
+            });
+        });
+        $("#submit").click(function(){
+            $("form:first").submit();
+        });
+    });
+</script>
+</body>
+</html>
