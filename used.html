@@ -13,12 +13,12 @@
 </head>
 <body>
     <header class="fix"><span></span>二手宝<span></span></header>
-    <ul id="nav" class="df aic">
-        <li class="fx1">不限类别</li>
-        <li class="fx1">不限区域</li>
-        <li class="fx1">不限价格</li>
+    <ul id="nav" class="df aic ">
+        <li class="fx1 navcolor" id="nav1">不限类别</li>
+        <li class="fx1 navcolor" id="nav2">不限区域</li>
+        <li class="fx1 navcolor" id="nav3">不限价格</li>
     </ul>
-    <ul id="type">
+    <ul id="type" style="display: none;">
         <li>不限类别</li>
         <li>手机</li>
         <li>相机/摄像机</li>
@@ -104,6 +104,105 @@
             </div>
         </li>
     </ul>
-    <div id="bg"></div>
+    <div id="bg" style="display: none;"></div>
+
+    <script>
+        $(function(){
+            $("#nav1").click(function(){
+                if(!$(this).hasClass("navcoloractive")) {
+                    $(this).removeClass("navcolor").addClass("navcoloractive").siblings().removeClass("navcoloractive").addClass("navcolor");
+                    $("#type").show();
+                    $("#location").hide();
+                    $("#price").hide();
+                    $("#bg").show();
+                }else{
+                    $(this).removeClass("navcoloractive").addClass("navcolor");
+                    $("#type").hide();
+                    $("#bg").hide();
+                }
+            });
+            $("#nav2").click(function(){
+                if(!$(this).hasClass("navcoloractive")) {
+                    $(this).removeClass("navcolor").addClass("navcoloractive").siblings().removeClass("navcoloractive").addClass("navcolor");
+                    $("#type").hide();
+                    $("#location").show();
+                    $("#price").hide();
+                    $("#bg").show();
+                }else{
+                    $(this).removeClass("navcoloractive").addClass("navcolor");
+                    $("#location").hide();
+                    $("#bg").hide();
+                }
+            });
+            $("#nav3").click(function(){
+                if(!$(this).hasClass("navcoloractive")) {
+                    $(this).removeClass("navcolor").addClass("navcoloractive").siblings().removeClass("navcoloractive").addClass("navcolor");
+                    $("#type").hide();
+                    $("#location").hide();
+                    $("#price").show();
+                    $("#bg").show();
+                }else{
+                    $(this).removeClass("navcoloractive").addClass("navcolor");
+                    $("#price").hide();
+                    $("#bg").hide();
+                }
+            });
+        });
+        $("#bg").click(function(){
+            $("#type").hide();
+            $("#location").hide();
+            $("#price").hide();
+            $("#bg").hide();
+            $("#nav").children("li").removeClass("navcoloractive").addClass("navcolor");
+        });
+        $("#type").delegate("li","click",function(){
+           var content=$(this).html();
+            if(content.length>4){
+                content=content.slice(0,4)+"..";
+            }
+           if(content){
+                $("#nav1").html(content);
+           }else{
+               $("#nav1").html("不限类别");
+           }
+            $("#type").hide();
+            $("#location").hide();
+            $("#price").hide();
+            $("#bg").hide();
+            $("#nav").children("li").removeClass("navcoloractive").addClass("navcolor");
+        });
+        $("#location").delegate("li","click",function(){
+            var content=$(this).html();
+            if(content.length>4){
+                content=content.slice(0,4)+"..";
+            }
+            if(content){
+                $("#nav2").html(content);
+            }else{
+                $("#nav2").html("不限区域");
+            }
+            $("#type").hide();
+            $("#location").hide();
+            $("#price").hide();
+            $("#bg").hide();
+            $("#nav").children("li").removeClass("navcoloractive").addClass("navcolor");
+        });
+        $("#price").delegate("li","click",function(){
+            var content=$(this).html();
+            if(content.length>6){
+                content=content.slice(0,6)+"..";
+            }
+            if(content){
+                $("#nav3").html(content);
+            }else{
+                $("#nav3").html("不限价格");
+            }
+            $("#type").hide();
+            $("#location").hide();
+            $("#price").hide();
+            $("#bg").hide();
+            $("#nav").children("li").removeClass("navcoloractive").addClass("navcolor");
+        });
+    </script>
 </body>
 </html>
