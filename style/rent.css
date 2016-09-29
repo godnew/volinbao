@@ -1,0 +1,79 @@
+body{
+    padding-top: 0.88rem;
+    background: #edf1f1;
+    position: relative;
+}
+header span:first-child{
+    display: inline-block;
+    margin-left:0.3rem;
+    width: 0.27rem;
+    height: 0.46rem;
+    background: url(../images/back.png) no-repeat center center;
+    -webkit-background-size:0.27rem 0.46rem;
+    background-size:0.27rem 0.46rem;
+    float: left;
+    margin-top:0.2rem;
+}
+header span:nth-of-type(2){
+    display: inline-block;
+    margin-right:0.3rem;
+    width:0.4rem;
+    height: 0.4rem;
+    background: url(../images/detail/edit.png) no-repeat center center;
+    -webkit-background-size:0.4rem 0.4rem;
+    background-size:0.4rem 0.4rem;
+    float: right;
+    margin-top:0.26rem;
+}
+#nav{
+    height:0.7rem;
+    border-bottom:1px solid #ccc;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+}
+#nav li{
+    height:0.3rem;
+    text-align: center;
+    font-size: 0.3rem;
+    padding-right:0.36rem;
+    line-height:0.3rem;
+    -webkit-background-size:0.27rem 0.17rem;
+    background-size:0.27rem 0.17rem;
+}
+#nav li:nth-of-type(2){
+    border-left:2px solid #999;
+    border-right:2px solid #999;
+}
+#nav li:nth-of-type(3){
+    border-right:2px solid #999;
+}
+.navcolor{
+    color: #585858;
+    background: url(../images/down.png) no-repeat 1.4rem center;
+}
+.navcoloractive{
+    color:#2f83c6;
+    background: url(../images/up.png) no-repeat 1.4rem center;
+}
+#content li{
+    padding:0.2rem 0.3rem;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+#content li img{
+    width:1.8rem;
+    height: 1.4rem;
+}
+.money{
+    color:#999;
+}
+.money span:first-child{
+    color:#e84643;
+}
+.type span{
+    padding:0.0rem 0.1rem;
+    color:#3b9cff;
+    border: 1px solid #3b9cff;
+    border-radius: 0.2rem;
+}
