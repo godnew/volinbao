@@ -145,3 +145,46 @@ input[type='radio']{
     font-size: 0.28rem;
     background: #fff;
 }
+#remind{
+    position: fixed;
+    bottom:0;
+    height: 4.85rem;
+    width: 100%;
+    background: #fff;
+    z-index: 4;
+}
+#remind h1{
+    height: 0.8rem;
+    line-height:0.8rem;
+    font-size:0.28rem;
+    text-align: center;
+    font-weight: normal;
+    background: #f0f0f0;
+}
+#remind p{
+    margin-top: 1.2rem;
+}
+#remind>div{
+    margin-top:1.1rem;
+}
+#remind div div:first-child{
+    width:3.3rem;
+    height: 0.7rem;
+    text-align: center;
+    line-height:0.7rem;
+    font-size: 0.28rem;
+    border:1px solid #999;
+    border-radius: 0.1rem;
+}
+#remind div div:last-child{
+    width:3.3rem;
+    height: 0.7rem;
+    text-align: center;
+    line-height:0.7rem;
+    font-size: 0.28rem;
+    border:1px solid #2f83c6;
+    border-radius: 0.1rem;
+    color: #fff;
+    background: #2f83c6;
+}
+

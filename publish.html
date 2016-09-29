@@ -12,7 +12,7 @@
     <script src="js/jquery.min.js"></script>
 </head>
 <body>
-<header class="fix"><span></span>宝贝详情<span id="submit">下一步</span></header>
+<header class="fix"><span class="remind"></span>宝贝详情<span id="submit">下一步</span></header>
 <form action="" method="get">
     <div class="tc pb20 bgwh">
         <div class='dib photo'><input type="file"></div>
@@ -54,6 +54,14 @@
         <li>7成新及以下</li>
     </ul>
 </div>
+<div id="remind" style="display: none;">
+    <h1>沃邻提示</h1>
+    <p class="tc f26 g0">保存草稿，下次就不用再重复写哦~</p>
+    <div class="df jcsb pl30 pr30">
+        <div>果断删除</div>
+        <div>帮我保存</div>
+    </div>
+</div>
 <div id="bg" style="display: none;"></div>
 <script>
     $(function(){
@@ -76,12 +84,17 @@
         $("#bg").click(function(){
             $(this).hide();
             $("#oldnew").hide();
+            $("#remind").hide();
         });
         $("#oldnew ul li").click(function(){
             var txt=$(this).html();
             $("#old").val(txt);
             $("#bg").hide();
             $("#oldnew").hide();
+        });
+        $(".remind").click(function(){
+            $("#bg").show();
+            $("#remind").show();
         });
     });
 </script>
