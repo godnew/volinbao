@@ -12,7 +12,7 @@
     <script src="js/jquery.min.js"></script>
 </head>
 <body>
-    <header class="fix"><span></span>二手宝<span></span></header>
+    <header class="fix"><span></span>二手宝<span id="pub"></span></header>
     <ul id="nav" class="df aic ">
         <li class="fx1 navcolor" id="nav1">不限类别</li>
         <li class="fx1 navcolor" id="nav2">不限区域</li>
@@ -105,7 +105,11 @@
         </li>
     </ul>
     <div id="bg" style="display: none;"></div>
-
+    <div id="publish" style="display: none;">
+        <h1>发布宝贝</h1>
+        <div style="margin-top: 0.8rem;">发布宝贝</div>
+        <div>使用草稿</div>
+    </div>
     <script>
         $(function(){
             $("#nav1").click(function(){
@@ -153,6 +157,7 @@
             $("#location").hide();
             $("#price").hide();
             $("#bg").hide();
+            $("#publish").hide();
             $("#nav").children("li").removeClass("navcoloractive").addClass("navcolor");
         });
         $("#type").delegate("li","click",function(){
@@ -202,6 +207,10 @@
             $("#price").hide();
             $("#bg").hide();
             $("#nav").children("li").removeClass("navcoloractive").addClass("navcolor");
+        });
+        $("#pub").click(function(){
+            $("#publish").show();
+            $("#bg").show();
         });
     </script>
 </body>

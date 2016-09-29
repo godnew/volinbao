@@ -171,3 +171,24 @@ header span:nth-of-type(2){
     left:0;
     position: absolute;
 }
+#publish{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4.04rem;
+    background: #fff;
+    z-index: 2;
+}
+#publish h1{
+    line-height: 0.8rem;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #666;
+    background: #f0f0f0;
+}
+#publish div{
+    line-height: 0.84rem;
+    font-size: 0.28rem;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
