@@ -45,8 +45,27 @@
     </div>
     <ul id="footer" class="df aic ">
         <li class="fx1">收藏</li>
-        <li class="fx1">电话</li>
+        <li class="fx1" id="phone">电话</li>
         <li class="fx1">私聊</li>
     </ul>
+    <div id="bg" style="display: none;"></div>
+    <div id="contact" style="display: none;">
+        <h1>沃邻提示</h1>
+        <p style="margin-top:0.7rem;">宝贝主人：沃邻社区</p>
+        <p>联系电话：18118111111</p>
+        <div>拨打电话</div>
+    </div>
+    <script>
+        $(function(){
+            $("#phone").click(function(){
+                $("#bg").show();
+                $("#contact").show();
+            });
+            $("#bg").click(function(){
+                $(this).hide();
+                $("#contact").hide();
+            });
+        });
+    </script>
 </body>
 </html>
