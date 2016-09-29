@@ -23,7 +23,7 @@
     </div>
     <div class="oprice df aic pl30 f30 bgwh"><span class="dib" style="width: 1.4rem;">原价</span><input type="text"><span>元</span></div>
     <div class="nprice df aic pl30 f30 bgwh bte"><span class="dib" style="width:1.4rem;">转让价</span><input type="text"><span>元</span></div>
-    <div class="old f30 df aic"><span>新旧程度</span><input type="text" readonly></div>
+    <div class="old f30 df aic"><span class="mr30">新旧程度</span><input type="text" readonly id="old"></div>
     <div class="phone f30 df aic mt20 pl30 bgwh"><span>手机号</span><input type="text"></div>
     <div class="name f30 df aic pl30 bgwh"><span>联系人</span><input type="text"></div>
     <div class="type pt30 bte">
@@ -44,6 +44,17 @@
         </ul>
     </div>
 </form>
+<div  id="oldnew" style="display: none;">
+    <h1 class="n f28 tc ">描述下宝贝的新旧程度吧</h1>
+    <ul>
+        <li>99成新</li>
+        <li>95成新</li>
+        <li>9成新</li>
+        <li>8成新</li>
+        <li>7成新及以下</li>
+    </ul>
+</div>
+<div id="bg" style="display: none;"></div>
 <script>
     $(function(){
         $("input[type='radio']").click(function(){
@@ -57,6 +68,20 @@
         });
         $("#submit").click(function(){
             $("form:first").submit();
+        });
+        $(".old").click(function(){
+            $("#bg").show();
+            $("#oldnew").show();
+        });
+        $("#bg").click(function(){
+            $(this).hide();
+            $("#oldnew").hide();
+        });
+        $("#oldnew ul li").click(function(){
+            var txt=$(this).html();
+            $("#old").val(txt);
+            $("#bg").hide();
+            $("#oldnew").hide();
         });
     });
 </script>
