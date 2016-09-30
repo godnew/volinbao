@@ -2,9 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1 ,user-scalable=0">
     <title>Title</title>
+    <link rel="stylesheet" href="style/Reset.css">
+    <link rel="stylesheet" href="style/CommonMB.css">
+    <link rel="stylesheet" href="style/Header.css">
+    <link rel="stylesheet" href="style/rentMessage.css">
+    <script src="js/common.js"></script>
+    <script src="js/jquery.min.js"></script>
 </head>
 <body>
-
+<header class="fix"><span></span>求租信息<span id="pub"></span></header>
+<form action="" method="get">
+    <div class="df aic pl30 select">
+        <label for="location">选择区域</label>
+        <input type="text" name="location" id="location" readonly>
+    </div>
+    <div class="df aic pl30 select mt20">
+        <label for="type">户型</label>
+        <input type="text" name="type" id="type" readonly>
+    </div>
+    <div class="df aic pl30 select">
+        <label for="money">选择区域</label>
+        <input type="text" name="money" id="money" readonly>
+    </div>
+    <div class="df aic pl30 mt20">
+        <label for="">标题</label>
+        <input type="text" name="">
+    </div>
+    <div class="df pl30" style="height: 1.5rem;padding-top: 0.1rem;">
+        <label for="" style="margin-top:0.1rem;">描述</label>
+        <input type="text" name="">
+    </div>
+    <div class="df aic pl30 mt20">
+        <label for="">联系人</label>
+        <input type="text" name="">
+    </div>
+    <div class="df aic pl30">
+        <label for="">联系电话</label>
+        <input type="text" name="">
+    </div>
+    <div class="df aic pl30 select mt20">
+        <label for="">发布时间</label>
+        <input type="text" name="" id="" readonly>
+    </div>
+    <input type="submit" value="确认发布">
+</form>
 </body>
 </html>
