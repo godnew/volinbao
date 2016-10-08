@@ -16,7 +16,7 @@
     <form action="">
         <h1 class="f28 n type">租住类型</h1>
         <div id="type" class="df aic">
-            <div class="rel typefontactive"><input type="radio" name="type">合租</div>
+            <div class="rel typefont typefontactive"><input type="radio" name="type" checked>合租</div>
             <div class="rel typefont ml30"><input type="radio" name="type">整租</div>
         </div>
         <ul>
@@ -30,5 +30,12 @@
         </ul>
         <input type="submit" value="下一步">
     </form>
+    <script>
+        $(function(){
+           $("input[type='radio']").click(function(){
+               $("input[type='radio']").filter(":checked").parent().addClass("typefontactive").siblings().removeClass("typefontactive");
+           });
+        });
+    </script>
 </body>
 </html>
