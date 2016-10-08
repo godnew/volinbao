@@ -89,5 +89,28 @@
         </div>
     </li>
 </ul>
+<ul id="content1" style="display:none;">
+    <li>
+        <h1 class="n f30 mt20">求租小面积门面做食品生意</h1>
+        <div><span>2000-2500元</span><span>3室</span></div>
+        <div class="df jcsb"><span>松江-松江新城</span><span>今天</span></div>
+    </li>
+</ul>
 </body>
+<script>
+    $(function(){
+        $("header").click(function(e){
+            e.stopPropagation();
+            if($(this).text()=="房屋出租"){
+                $(this).html("<span></span>房屋求租<span id='pub'></span>");
+                $("#content").toggle();
+                $("#content1").toggle();
+            }else{
+                $(this).html("<span></span>房屋出租<span id='pub'></span>");
+                $("#content").toggle();
+                $("#content1").toggle();
+            };
+        });
+    })
+</script>
 </html>
