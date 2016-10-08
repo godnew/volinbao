@@ -118,6 +118,7 @@ header span:nth-of-type(2){
     width:100%;
     position:absolute;
     background: #fff;
+    z-index: 3;
 }
 #address ul{
     width: 50%;
@@ -126,6 +127,45 @@ header span:nth-of-type(2){
     background: #f0f0f0;
 }
 #address ul li{
+    height: 0.7rem;
+    line-height:0.7rem;
+    font-size: 0.3rem;
+    padding-left: 0.3rem;
+    border-bottom: 1px solid #eee;
+}
+#type{
+    width:100%;
+    position:absolute;
+    background: #fff;
+    z-index: 3;
+}
+#type li{
+    height: 0.7rem;
+    line-height:0.7rem;
+    font-size: 0.3rem;
+    padding-left: 0.3rem;
+    border-bottom: 1px solid #eee;
+}
+#money{
+    width:100%;
+    position:absolute;
+    background: #fff;
+    z-index: 3;
+}
+#money li{
+    height: 0.7rem;
+    line-height:0.7rem;
+    font-size: 0.3rem;
+    padding-left: 0.3rem;
+    border-bottom: 1px solid #eee;
+}
+#time{
+    width:100%;
+    position:absolute;
+    background: #fff;
+    z-index: 3;
+}
+#time li{
     height: 0.7rem;
     line-height:0.7rem;
     font-size: 0.3rem;
