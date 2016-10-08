@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1 ,user-scalable=0">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/Reset.css">
+    <link rel="stylesheet" href="style/CommonMB.css">
+    <link rel="stylesheet" href="style/Header.css">
+    <link rel="stylesheet" href="style/lease.css">
+    <script src="js/common.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <header class="fix"><span></span>出租信息</header>
+    <form action="">
+        <h1 class="f28 n type">租住类型</h1>
+        <div id="type" class="df aic">
+            <div class="rel typefontactive"><input type="radio" name="type">合租</div>
+            <div class="rel typefont ml30"><input type="radio" name="type">整租</div>
+        </div>
+        <ul>
+            <li class="mt20 df aic change"><label for="">选择区域</label><input type="text" readonly></li>
+            <li class="df aic jcsb change "><div><label for="">选择小区</label><input type="text" placeholder="2-20字"></div><span class="f30" style="margin-right:0.6rem;">快速选择</span></li>
+            <li class="mt20 df aic change"><label for="">户&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型</label><input type="text" placeholder="请选择户型" readonly></li>
+            <li class="df aic jcsb"><div><label for="">面&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;积</label><input type="text" placeholder="请输入面积值"></div><span class="f30 mr30">平米</span></li>
+            <li class="df aic change"><label for="">楼&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;层</label><input type="text" placeholder="请选择楼层" readonly></li>
+            <li class="df aic jcsb"><div><label for="">租&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;金</label><input type="text" placeholder="请输入租金金额"></div><span class="f30 mr30">元/月</span></li>
+            <li class="mt20 df aic change"><label for="">装修情况</label><input type="text" placeholder="请选择装修状态" readonly></li>
+        </ul>
+        <input type="submit" value="下一步">
+    </form>
+</body>
+</html>
