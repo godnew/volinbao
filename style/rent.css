@@ -114,3 +114,21 @@ header span:nth-of-type(2){
 #content1 li div:nth-of-type(2) span:last-child{
     font-size: 0.24rem;
 }
+#address{
+    width:100%;
+    position:absolute;
+    background: #fff;
+}
+#address ul{
+    width: 50%;
+}
+#address ul:last-child{
+    background: #f0f0f0;
+}
+#address ul li{
+    height: 0.7rem;
+    line-height:0.7rem;
+    font-size: 0.3rem;
+    padding-left: 0.3rem;
+    border-bottom: 1px solid #eee;
+}
