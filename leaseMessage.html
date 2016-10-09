@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1 ,user-scalable=0">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/Reset.css">
+    <link rel="stylesheet" href="style/CommonMB.css">
+    <link rel="stylesheet" href="style/Header.css">
+    <link rel="stylesheet" href="style/leaseMessage.css">
+    <script src="js/common.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <header class="fix"><span></span>出租信息</header>
+    <form action="">
+        <h1 class="n roomname">房间名称</h1>
+        <ul class="df jcsb aic pr30 pl30" id="roomname">
+            <li class="rel roomfont roomfontactive"><input type="radio" name="roomname">主卧</li>
+            <li class="rel roomfont"><input type="radio" name="roomname">次卧</li>
+            <li class="rel roomfont"><input type="radio" name="roomname">床位</li>
+        </ul>
+        <div class="df jcsb aic area pr30 pl30 mt20" ><div><label for="">房间面积</label><input type="text" placeholder="请输入面积值"></div><span style="color:#3b9cff;">平米</span></div>
+        <h1 class="n roomname" style="height: 0.68rem;line-height: 0.68rem;">朝向</h1>
+        <ul class="direction df fww pr30 pl30">
+            <li class="directionfont directionfontactive"><input type="radio">东</li>
+            <li class="directionfont"><input type="radio">西</li>
+            <li class="directionfont"><input type="radio">南</li>
+            <li class="directionfont"><input type="radio">北</li>
+            <li class="directionfont"><input type="radio">南北</li>
+            <li class="directionfont"><input type="radio">东西</li>
+            <li class="directionfont"><input type="radio">东北</li>
+            <li class="directionfont"><input type="radio">东南</li>
+            <li class="directionfont"><input type="radio">西北</li>
+            <li class="directionfont"><input type="radio">西南</li>
+        </ul>
+        <h1 class="n roomname" style="height: 0.68rem;line-height: 0.68rem;">付款方式</h1>
+        <ul class="pay df fww pr30 pl30">
+            <li class="directionfont directionfontactive"><input type="radio">押一付三</li>
+            <li class="directionfont"><input type="radio">押一付二</li>
+            <li class="directionfont"><input type="radio">押一付一</li>
+            <li class="directionfont"><input type="radio">押二付三</li>
+            <li class="directionfont"><input type="radio">押二付二</li>
+            <li class="directionfont"><input type="radio">押二付一</li>
+            <li class="directionfont"><input type="radio">半年付</li>
+            <li class="directionfont"><input type="radio">整年付</li>
+            <li class="directionfont"><input type="radio">押零付一</li>
+        </ul>
+        <h1 class="n roomname" style="height: 0.68rem;line-height: 0.68rem;">房屋配置</h1>
+        <ul class="have df fww pr30 pl30">
+            <li class="directionfont directionfontactive"><input type="checkbox">床</li>
+            <li class="directionfont"><input type="checkbox">暖气</li>
+            <li class="directionfont"><input type="checkbox">宽带</li>
+            <li class="directionfont"><input type="checkbox">电视</li>
+            <li class="directionfont"><input type="checkbox">冰箱</li>
+            <li class="directionfont"><input type="checkbox">洗衣机</li>
+            <li class="directionfont"><input type="checkbox">微波炉</li>
+            <li class="directionfont"><input type="checkbox">热水器</li>
+            <li class="directionfont"><input type="checkbox">空调</li>
+            <li class="directionfont"><input type="checkbox">沙发</li>
+            <li class="directionfont"><input type="checkbox">衣柜</li>
+            <li class="directionfont"><input type="checkbox">可做饭</li>
+            <li class="directionfont"><input type="checkbox">阳台</li>
+            <li class="directionfont"><input type="checkbox">独立卫生间</li>
+        </ul>
+        <h1 class="n roomname" style="height: 0.68rem;line-height: 0.68rem;">对租客的要求（可多选）</h1>
+        <ul class="require have df fww pr30 pl30">
+            <li class="directionfont directionfontactive"><input type="checkbox">作息规律</li>
+            <li class="directionfont"><input type="checkbox">爱干净</li>
+            <li class="directionfont"><input type="checkbox">不抽烟</li>
+            <li class="directionfont"><input type="checkbox">不喝酒</li>
+            <li class="directionfont"><input type="checkbox">单身</li>
+            <li class="directionfont"><input type="checkbox">已婚</li>
+            <li class="directionfont"><input type="checkbox">单人住</li>
+            <li class="directionfont"><input type="checkbox">双人住</li>
+            <li class="directionfont"><input type="checkbox">女生</li>
+            <li class="directionfont"><input type="checkbox">男生</li>
+        </ul>
+        <h1 class="n roomname" style="height: 0.68rem;line-height: 0.68rem;">其他说明</h1>
+        <div class="other fix">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <span class="r f28 mt15">0/300</span>
+        </div>
+        <input type="submit" value="下一步">
+    </form>
+</body>
+</html>
