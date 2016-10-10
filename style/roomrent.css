@@ -1,0 +1,191 @@
+body{
+    padding-top: 0.88rem;
+    background: #fff;
+    position: relative;
+}
+header span:first-child{
+    display: inline-block;
+    margin-left:0.3rem;
+    width: 0.27rem;
+    height: 0.46rem;
+    background: url(../images/back.png) no-repeat center center;
+    -webkit-background-size:0.27rem 0.46rem;
+    background-size:0.27rem 0.46rem;
+    float: left;
+    margin-top:0.2rem;
+}
+header span:nth-of-type(2){
+    display: inline-block;
+    margin-right:0.3rem;
+    width:0.4rem;
+    height: 0.4rem;
+    background: url(../images/detail/edit.png) no-repeat center center;
+    -webkit-background-size:0.4rem 0.4rem;
+    background-size:0.4rem 0.4rem;
+    float: right;
+    margin-top:0.26rem;
+}
+#banner{
+    position: relative;
+}
+#banner img{
+    width: 100%;
+    height: 5rem;
+}
+#banner div{
+    position: absolute;
+    height: 0.7rem;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background:rgba(0,0,0,0.5);
+}
+#banner div span:first-child{
+    font-size: 0.36rem;
+    display: inline-block;
+    color:#fff;
+}
+#banner div span:last-child{
+    font-size: 0.3rem;
+    display: inline-block;
+    width:1.2rem;
+    height: 0.46rem;
+    line-height: 0.46rem;
+    text-align: center;
+    border:1px solid #fff;
+    color:#fff;
+}
+.intro li{
+    padding:0.05rem 0.15rem;
+    font-size: 0.24rem;
+    line-height: 0.24rem;
+    color: #3b9cff;
+    border:1px solid #3b9cff;
+    border-radius: 0.2rem;
+    margin-left: 0.1rem;
+}
+.detail{
+    margin-top: 0.08rem;
+    margin-bottom: 0.3rem;
+}
+.detail li{
+    width: 50%;
+    font-size:0.28rem;
+    line-height:0.28rem;
+    margin-top:0.28rem;
+}
+.detail li span{
+    margin-left: 0.3rem;
+}
+.detail li span:first-child{
+    color:#3d5056;
+}
+.detail li span:last-child{
+    color:#0f1314;
+}
+
+.content img{
+    display: inline;
+    width:0.58rem;
+    height:0.58rem;
+    margin-bottom: 0.16rem;
+}
+.content li{
+    text-align: center;
+    margin-top: 0.3rem;
+    width: 1.25rem;
+}
+.content li:nth-of-type(6n-5){
+    margin-left: 0;
+}
+.content p{
+    font-size: 0.24rem;
+}
+.condition span{
+    padding:0.05rem 0.15rem;
+    font-size: 0.24rem;
+    line-height: 0.24rem;
+    color: #3b9cff;
+    border:1px solid #3b9cff;
+    border-radius: 0.2rem;
+    display: inline-block;
+}
+#intro{
+    line-height: 0.5rem;
+    margin-top: 0.22rem;
+    font-size: 0.28rem;
+    color:#0f1415;
+    margin-bottom: 0.12rem;
+}
+.warning{
+    height: 1.42rem;
+    background: #ecc8d1;
+}
+.warning div p:first-child{
+    font-size: 0.24rem;
+    color:#3e5055;
+}
+.warning div p:last-child{
+    font-size:0.28rem;
+    color:#e83c30;
+}
+.warning > div:last-child{
+    font-size:0.24rem ;
+    color:#fff;
+    width: 0.82rem;
+    height: 0.82rem;
+    border:0.04rem solid #fff;
+    background: #eb4f70;
+    line-height: 0.82rem;
+    text-align: center;
+    border-radius: 0.8rem;
+}
+#footer{
+    height:1rem;
+    width:100%;
+}
+#footer li{
+    height:0.9rem;
+    text-align: center;
+    line-height:0.9rem;
+    padding-left:0.24rem;
+    position: relative;
+}
+#footer li:nth-of-type(1){
+    border-right:1px solid #bdc0c0;
+    color: #0f1315;
+    -webkit-background-size:0.32rem 0.32rem;
+    background-size:0.32rem 0.32rem;
+    font-size: 0.28rem;
+}
+#footer li:nth-of-type(1) span{
+    line-height: 0.28rem;
+    position:absolute;
+    left:0.85rem;
+    top:0.52rem;
+}
+#footer li:nth-of-type(1) img{
+    position: absolute;
+    width: 1rem;
+    height:1rem;
+    left:50%;
+    margin-left:-0.5rem;
+    top:-0.5rem;
+}
+#footer li:nth-of-type(2){
+    color:#0f1315;
+    background: #fff url(../images/roomrent/collection.png) no-repeat 0.75rem center;
+    -webkit-background-size:0.32rem 0.32rem;
+    background-size:0.32rem 0.32rem;
+    font-size: 0.28rem;
+}
+#footer li:nth-of-type(3){
+    color:#fff;
+    background: #3b9cff url(../images/roomrent/phone.png) no-repeat 0.7rem center;
+    -webkit-background-size:0.36rem 0.36rem;
+    background-size:0.34rem 0.28rem;
+    font-size:0.32rem;
+}
