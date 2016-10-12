@@ -2,6 +2,7 @@ body{
     padding-top: 0.88rem;
     background: #fff;
     position: relative;
+    padding-bottom: 2rem;
 }
 header span:first-child{
     display: inline-block;
@@ -146,6 +147,9 @@ header span:nth-of-type(2){
 #footer{
     height:1rem;
     width:100%;
+    position: fixed;
+    bottom:0;
+    background: #fff;
 }
 #footer li{
     height:0.9rem;
@@ -188,4 +192,17 @@ header span:nth-of-type(2){
     -webkit-background-size:0.36rem 0.36rem;
     background-size:0.34rem 0.28rem;
     font-size:0.32rem;
+}
+#map{
+    width:100%;
+    height: 3.4rem;
+}
+#location{
+    padding-left: 0.3rem;
+    font-size:0.28rem;
+    color:#3d4f55;
+    margin-bottom: 0.3rem;
+}
+#location span{
+    color:#0f1315;
 }
