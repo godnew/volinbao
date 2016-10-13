@@ -12,7 +12,7 @@
     <script src="js/jquery.min.js"></script>
 </head>
 <body>
-    <header class="fix"><span></span>出租信息</header>
+    <header class="fix"><span onclick="history.go(-1)"></span>出租信息</header>
     <form action="">
         <div><label for="">联 系 人</label><input type="text" maxlength="7"></div>
         <div><label for="">联系电话</label><input type="text" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" maxlength="11
